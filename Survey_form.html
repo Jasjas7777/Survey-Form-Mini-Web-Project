@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking time filling out the survey</p>
+<form method="post" id="survey-form" action='https://survey-form.freecodecamp.org.'>
+
+    <fieldset>
+
+        <label for="name" id="name-label">Name
+            <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+
+        <label for="email" id="email-label">Email
+            <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+
+        <label for="number" id="number-label">Age (optional)
+            <input id="number" name="number" type="number" placeholder="Age" min="1" max="120"></label>
+
+        <label for="role">Which option best describes your current role?
+            <select id="dropdown" name="role">
+                <option value="">(select current role)</option>
+                <option value="1">Student</option>
+                <option value="2">Full time job</option>
+                <option value="3">Part time job</option>
+                <option value="4">Unemployed</option>
+                <option value="5">Prefer not share</option>
+                <option value="6">Other</option>
+            </select>
+        </label>
+
+        <div class="refer">
+            <legend>Would you recommend XXX to a friend?</legend>
+            <label for="Yes"><input id="Yes" type="radio" name="Referral" value = "Yes" class="inline" checked />Yes</label>
+            <label for="Maybe"><input id="Maybe" type="radio" name="Referral" value = "Maybe" class="inline" />Maybe</label>
+            <label for="No"><input id="No" type="radio" name="Referral" value = "No" class="inline"  />No</label>
+        </div>
+
+        <div class="feature">
+            <label for="feature">What is your favourite feature of XXX?
+                <select id="dropdown" name="feature">
+                        <option value="">(select an option)</option>
+                        <option value="1">Projects</option>
+                        <option value="2">Challenge</option>
+                        <option value="3">Videos</option>
+                        <option value="4">Forum</option>
+                        <option value="5">Community</option>
+                        <option value="6">Other</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="Improvement">
+            <legend>What would you like to improve? (Select all that apply)</legend>
+            <label for="Front-end Project"><input id="Front-end Project" type="checkbox" name="Improvement" value="Front-end Project" class="inline"> Front-end Project</label>
+            <label for="Back-end Project"><input id="Back-end Project" type="checkbox" name="Improvement" value="Back-end Project" class="inline">Back-end Project</label>
+            <label for="Data Visualization"><input id="Data Visualization" type="checkbox" name="Improvement" value="Data Visualization" class="inline">Data Visualization</label>
+        </div>
+
+        <div class="Comment">
+            <label for="Comment">Any comments or suggestions?<textarea id="Comment" name="Comment" rows="5" col="30" placeholder="Enter your comment here..."></textarea></label>
+            <input id="submit" type="submit" value="Submit" />
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

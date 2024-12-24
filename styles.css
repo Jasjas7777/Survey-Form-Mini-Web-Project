@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://img.freepik.com/free-vectorpastel-gradient-blur-background-vector_53876-174841.jpg?semt=ais_hybrid);
+    font-family: Palatino, URW Palladio L, serif;
+}
+
+h1,p {
+    text-align: center;
+    margin: auto;
+}
+
+form {
+    margin: 0 auto;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+
+}
+fieldset:first-of-type{
+    margin-top: 1em
+}
+
+fieldset {
+    border: None;
+    padding: 2rem;
+    margin-bottom: -1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+label {
+    display: block;
+    margin: 1rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#f6d0ff;
+    border-color: #f6d0ff;
+    min-width: 300px;
+    font-family: Palatino, URW Palladio L, serif;
+}
+
+input::placeholder {
+    font-family: Palatino, URW Palladio L, serif;
+}
